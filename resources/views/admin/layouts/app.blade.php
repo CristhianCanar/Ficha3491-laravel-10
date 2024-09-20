@@ -32,6 +32,12 @@
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="{{ asset('atlantis/assets/css/demo.css')}}">
+
+    <style>
+        .form-group label, .form-check label {
+            white-space: normal; }
+    </style>
+
 </head>
 
 <body>
@@ -368,38 +374,22 @@
                             </span>
                             <h4 class="text-section">Components</h4>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ request()->routeIs('usuarios.*') ? 'active' : '' }}">
                             <a data-toggle="collapse" href="#usuarios">
                                 <i class="fas fa-layer-group"></i>
                                 <p>Usuarios</p>
                                 <span class="caret"></span>
                             </a>
-                            <div class="collapse {{ request()->routeIs('usuarios.*') ? 'show' : '' }}">
-
-                            </div>
-
-
-
                             <div class="collapse {{ request()->routeIs('usuarios.*') ? 'show' : '' }}"
                                 id="usuarios">
                                 <ul class="nav nav-collapse">
-                                    @can('users_registrar')
-                                        <li
-                                            class="{{ request()->routeIs(['usuarios.create', 'usuarios.store']) ? 'active' : '' }}">
-                                            <a href="{{ route('usuarios.create') }}">
-                                                <span class="sub-item">Registrar usuario</span>
-                                            </a>
-                                        </li>
-                                    @endcan
-                                    <li
-                                        class="{{ request()->routeIs(['usuarios.index', 'usuarios.show', 'usuarios.edit', 'usuarios.update', 'usuarios.destroy']) ? 'active' : '' }}">
-                                        <a href="{{ route('usuarios.index') }}">
-                                            <span class="sub-item">Gestionar usuarios</span>
+                                    <li class="{{ request()->routeIs(['usuarios.create', 'usuarios.store']) ? 'active' : ''}}">
+                                        <a href="{{ route('usuarios.create') }}">
+                                            <span class="sub-item">Registrar usuario</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-
                         </li>
                     </ul>
                 </div>
