@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Atlantis Lite - Bootstrap 4 Admin Dashboard</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="{{ asset('atlantis/assets/img/icon.ico')}}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('atlantis/assets/img/icon.ico') }}" type="image/x-icon" />
 
     <!-- Fonts and icons -->
-    <script src="{{ asset('atlantis/assets/js/plugin/webfont/webfont.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/webfont/webfont.min.js') }}"></script>
     <script>
         WebFont.load({
             google: {
@@ -18,7 +18,7 @@
                 "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands",
                     "simple-line-icons"
                 ],
-                urls: ["{{ asset('atlantis/assets/css/fonts.min.css')}}"]
+                urls: ["{{ asset('atlantis/assets/css/fonts.min.css') }}"]
             },
             active: function() {
                 sessionStorage.fonts = true;
@@ -27,15 +27,17 @@
     </script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="{{ asset('atlantis/assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('atlantis/assets/css/atlantis.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('atlantis/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('atlantis/assets/css/atlantis.min.css') }}">
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="{{ asset('atlantis/assets/css/demo.css')}}">
+    <link rel="stylesheet" href="{{ asset('atlantis/assets/css/demo.css') }}">
 
     <style>
-        .form-group label, .form-check label {
-            white-space: normal; }
+        .form-group label,
+        .form-check label {
+            white-space: normal;
+        }
     </style>
 
 </head>
@@ -47,7 +49,7 @@
             <div class="logo-header" data-background-color="blue">
 
                 <a href="index.html" class="logo">
-                    <img src="{{ asset('atlantis/assets/img/logo.svg')}}" alt="navbar brand" class="navbar-brand">
+                    <img src="{{ asset('atlantis/assets/img/logo.svg') }}" alt="navbar brand" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
                     data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +107,8 @@
                                         <div class="notif-center">
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="{{ asset('atlantis/assets/img/jm_denis.jpg')}}" alt="Img Profile">
+                                                    <img src="{{ asset('atlantis/assets/img/jm_denis.jpg') }}"
+                                                        alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="subject">Jimmy Denis</span>
@@ -117,7 +120,8 @@
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="{{ asset('atlantis/assets/img/chadengle.jpg')}}" alt="Img Profile">
+                                                    <img src="{{ asset('atlantis/assets/img/chadengle.jpg') }}"
+                                                        alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="subject">Chad</span>
@@ -129,7 +133,8 @@
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="{{ asset('atlantis/assets/img/mlane.jpg')}}" alt="Img Profile">
+                                                    <img src="{{ asset('atlantis/assets/img/mlane.jpg') }}"
+                                                        alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="subject">Jhon Doe</span>
@@ -141,7 +146,8 @@
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="{{ asset('atlantis/assets/img/talha.jpg')}}" alt="Img Profile">
+                                                    <img src="{{ asset('atlantis/assets/img/talha.jpg') }}"
+                                                        alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="subject">Talha</span>
@@ -195,7 +201,8 @@
                                             </a>
                                             <a href="#">
                                                 <div class="notif-img">
-                                                    <img src="{{ asset('atlantis/assets/img/profile2.jpg')}}" alt="Img Profile">
+                                                    <img src="{{ asset('atlantis/assets/img/profile2.jpg') }}"
+                                                        alt="Img Profile">
                                                 </div>
                                                 <div class="notif-content">
                                                     <span class="block">
@@ -280,7 +287,7 @@
                             <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
                                 aria-expanded="false">
                                 <div class="avatar-sm">
-                                    <img src="{{ asset('atlantis/assets/img/profile.jpg')}}" alt="..."
+                                    <img src="{{ asset('atlantis/assets/img/profile.jpg') }}" alt="..."
                                         class="avatar-img rounded-circle">
                                 </div>
                             </a>
@@ -288,7 +295,8 @@
                                 <div class="dropdown-user-scroll scrollbar-outer">
                                     <li>
                                         <div class="user-box">
-                                            <div class="avatar-lg"><img src="{{ asset('atlantis/assets/img/profile.jpg')}}"
+                                            <div class="avatar-lg"><img
+                                                    src="{{ asset('atlantis/assets/img/profile.jpg') }}"
                                                     alt="image profile" class="avatar-img rounded"></div>
                                             <div class="u-text">
                                                 <h4>Hizrian</h4>
@@ -328,7 +336,8 @@
                 <div class="sidebar-content">
                     <div class="user">
                         <div class="avatar-sm float-left mr-2">
-                            <img src="{{ asset('atlantis/assets/img/profile.jpg')}}" alt="..." class="avatar-img rounded-circle">
+                            <img src="{{ asset('atlantis/assets/img/profile.jpg') }}" alt="..."
+                                class="avatar-img rounded-circle">
                         </div>
                         <div class="info">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -383,9 +392,18 @@
                             <div class="collapse {{ request()->routeIs('usuarios.*') ? 'show' : '' }}"
                                 id="usuarios">
                                 <ul class="nav nav-collapse">
-                                    <li class="{{ request()->routeIs(['usuarios.create', 'usuarios.store']) ? 'active' : ''}}">
+                                    <li
+                                        class="{{ request()->routeIs(['usuarios.create', 'usuarios.store']) ? 'active' : '' }}">
                                         <a href="{{ route('usuarios.create') }}">
                                             <span class="sub-item">Registrar usuario</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="{{ request()->routeIs(['usuarios.index', 'usuarios.update', 'usuarios.delete', 'usuarios.show'])
+                                            ? 'active'
+                                            : '' }}">
+                                        <a href="{{ route('usuarios.index') }}">
+                                            <span class="sub-item">Gestionar usuarios</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -408,7 +426,7 @@
 
                     </nav>
                     <div class="copyright ml-auto">
-                        {{now()->year}}, hecho con <i class="fa fa-heart heart text-danger"></i> por <a
+                        {{ now()->year }}, hecho con <i class="fa fa-heart heart text-danger"></i> por <a
                             href="#">Cristhian Cañar</a>
                     </div>
                 </div>
@@ -417,42 +435,42 @@
 
     </div>
     <!--   Core JS Files   -->
-    <script src="{{ asset('atlantis/assets/js/core/jquery.3.2.1.min.js')}}"></script>
-    <script src="{{ asset('atlantis/assets/js/core/popper.min.js')}}"></script>
-    <script src="{{ asset('atlantis/assets/js/core/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/core/jquery.3.2.1.min.js') }}"></script>
+    <script src="{{ asset('atlantis/assets/js/core/popper.min.js') }}"></script>
+    <script src="{{ asset('atlantis/assets/js/core/bootstrap.min.js') }}"></script>
 
     <!-- jQuery UI -->
-    <script src="{{ asset('atlantis/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')}}"></script>
-    <script src="{{ asset('atlantis/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') }}"></script>
 
     <!-- jQuery Scrollbar -->
-    <script src="{{ asset('atlantis/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
 
 
     <!-- Chart JS -->
-    <script src="{{ asset('atlantis/assets/js/plugin/chart.js/chart.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/chart.js/chart.min.js') }}"></script>
 
     <!-- jQuery Sparkline -->
-    <script src="{{ asset('atlantis/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
 
     <!-- Chart Circle -->
-    <script src="{{ asset('atlantis/assets/js/plugin/chart-circle/circles.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/chart-circle/circles.min.js') }}"></script>
 
     <!-- Datatables -->
-    <script src="{{ asset('atlantis/assets/js/plugin/datatables/datatables.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/datatables/datatables.min.js') }}"></script>
 
     <!-- Bootstrap Notify -->
-    <script src="{{ asset('atlantis/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
 
     <!-- jQuery Vector Maps -->
-    <script src="{{ asset('atlantis/assets/js/plugin/jqvmap/jquery.vmap.min.js')}}"></script>
-    <script src="{{ asset('atlantis/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/jqvmap/jquery.vmap.min.js') }}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js') }}"></script>
 
     <!-- Sweet Alert -->
-    <script src="{{ asset('atlantis/assets/js/plugin/sweetalert/sweetalert.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/plugin/sweetalert/sweetalert.min.js') }}"></script>
 
     <!-- Atlantis JS -->
-    <script src="{{ asset('atlantis/assets/js/atlantis.min.js')}}"></script>
+    <script src="{{ asset('atlantis/assets/js/atlantis.min.js') }}"></script>
 </body>
 
 </html>

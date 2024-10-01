@@ -16,6 +16,8 @@ use RealRashid\SweetAlert\Facades\Alert;
 |
 */
 
+require __DIR__.'/auth.php';
+
 Route::get('/', function () {
     Alert::success('Titulo alerta', 'Mensaje de la alerta');
     #toast('Ejemplo de toast')->success('dark');
@@ -40,4 +42,4 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('usuarios', UsuarioWebController::class);
 
-require __DIR__.'/auth.php';
+

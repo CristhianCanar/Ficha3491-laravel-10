@@ -18,7 +18,8 @@ class UsuarioWebController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::paginate(1);
+        return view('admin.users.gestionar', compact('users'));
     }
 
     /**
@@ -36,8 +37,8 @@ class UsuarioWebController extends Controller
     {
 
         $request->validate([
-            'name' => 'string|min:3|max:50',
-            'email' => 'email|max:15',
+            'name' => 'string|min:3|max:100',
+            'email' => 'email|max:100|min:7',
             'password' => 'string|min:8|confirmed:password_confirmation',
         ]);
 
